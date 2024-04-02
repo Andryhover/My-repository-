@@ -1,3 +1,5 @@
+package model;
+
 public class Question {
     private String questionName;
     private String option1;

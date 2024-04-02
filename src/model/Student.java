@@ -1,3 +1,5 @@
+package model;
+
 public class Student extends User {
     private Teacher teacher;
 
@@ -5,7 +7,8 @@ public class Student extends User {
         super(name, surname, Role.STUDENT, pinCode);
         this.teacher = teacher;
     }
-        public Teacher getTeacher () {
-            return teacher;
-        }
+
+    public Teacher getTeacher () {
+        return teacher;
     }
+}

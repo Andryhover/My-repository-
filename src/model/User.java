@@ -1,3 +1,7 @@
+package model;
+
+import model.Role;
+
 public abstract class User {
     private String name;
     private String surname;
@@ -26,7 +30,7 @@ public abstract class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "model.User{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", role=" + role +
