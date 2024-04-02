@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class StudentService {
     private TeacherService teacherService = new TeacherService();
-    private List<Student> students = new ArrayList<>(){{
+    private List<Student> students = new ArrayList<>() {{
         add(new Student("Михаил", "Николаевич", teacherService.getRandomTeacher(), 121));
         add(new Student("Антон", "Евгеньевич", teacherService.getRandomTeacher(), 122));
         add(new Student("Пётр", "Андреевич", teacherService.getRandomTeacher(), 123));
