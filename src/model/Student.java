@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Студент системы
+ */
 public class Student extends User {
     private Teacher teacher;
 

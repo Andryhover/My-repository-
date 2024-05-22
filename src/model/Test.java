@@ -2,6 +2,9 @@ package model;
 
 import java.util.List;
 
+/**
+ * Тэст системы
+ */
 public class Test {
     private String nameTest;
     private List<Question> questions;

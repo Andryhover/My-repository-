@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Сервис для работы с тэстами системы
  */
-public class TestService {
+public class TestController {
     private List<Question> javaQuestions = new ArrayList<>() {{
         add(new Question(
                 "Что из следующего НЕВЕРНО в отношении массивов в Java?",

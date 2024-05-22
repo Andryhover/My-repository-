@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Администратор системы
+ */
 public class Admin extends User {
 
     public Admin(String name, String surname, Integer pinCode) {

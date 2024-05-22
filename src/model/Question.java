@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Вопрос тэста системы
+ */
 public class Question {
     private String questionName;
     private String option1;
@@ -8,7 +11,8 @@ public class Question {
     private String option4;
     private int rightAnswer;
 
-    public Question(String questionName,String option1,String option2,String option3,String option4,Integer rightAnswer) {
+    public Question(String questionName, String option1, String option2, String option3, String option4,
+                    Integer rightAnswer) {
         this.questionName=questionName;
         this.option1=option1;
         this.option2=option2;

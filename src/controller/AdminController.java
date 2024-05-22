@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Сервис для работы с администраторами системы
  */
-public class AdminService {
+public class AdminController {
     List<Admin> admins = new ArrayList<>() {{
         add(new Admin("Дмитрий", "Геннадьевич", 200));
     }};
