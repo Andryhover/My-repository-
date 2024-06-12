@@ -2,10 +2,10 @@ import controller.AdminController;
 import controller.StudentController;
 import controller.TeacherController;
 import controller.TestController;
-import model.Admin;
-import model.Student;
-import model.Teacher;
-import model.Test;
+import model.user.Admin;
+import model.user.Student;
+import model.user.Teacher;
+import model.test.Test;
 
 import java.util.List;
 import java.util.Objects;

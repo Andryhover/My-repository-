@@ -1,6 +1,6 @@
 package controller;
 
-import model.Admin;
+import model.user.Admin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,8 @@ import java.util.List;
  */
 public class AdminController {
     List<Admin> admins = new ArrayList<>() {{
-        add(new Admin("Дмитрий", "Геннадьевич", 200));
+        add(new Admin(1L, "Дмитрий", "Геннадьевич", 200));
     }};
-
     public List<Admin> getAdmins() {
         return admins;
     }

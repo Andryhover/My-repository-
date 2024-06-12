@@ -1,4 +1,4 @@
-package model;
+package model.user;
 
 /**
  * Студент системы
@@ -6,8 +6,8 @@ package model;
 public class Student extends User {
     private Teacher teacher;
 
-    public Student(String name, String surname, Teacher teacher, Integer pinCode) {
-        super(name, surname, Role.STUDENT, pinCode);
+    public Student(Long id, String name, String surname, Teacher teacher, Integer pinCode) {
+        super(id, name, surname, Role.STUDENT, pinCode);
         this.teacher = teacher;
     }
 

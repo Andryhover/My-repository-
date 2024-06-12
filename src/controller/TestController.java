@@ -1,7 +1,7 @@
 package controller;
 
-import model.Question;
-import model.Test;
+import model.test.Question;
+import model.test.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,7 @@ import java.util.List;
  * Сервис для работы с тэстами системы
  */
 public class TestController {
+
     private List<Question> javaQuestions = new ArrayList<>() {{
         add(new Question(
                 "Что из следующего НЕВЕРНО в отношении массивов в Java?",
@@ -27,9 +28,11 @@ public class TestController {
                 4));
         add(new Question(
                 "Что из следующего верно в отношении наследования в Java?",
-                "В Java все классы наследуются от класса Object прямо или косвенно.Класс Object является корневым для всех классов",
+                "В Java все классы наследуются от класса Object прямо или косвенно.Класс Object является " +
+                        "корневым для всех классов",
                 "Множественное наследование в Java запрещено",
-                "В отличие от C ++, в Java нет ничего похожего на тип наследования, где мы могли бы указать, является ли наследование защищенным, общедоступным или частным",
+                "В отличие от C ++, в Java нет ничего похожего на тип наследования, где мы могли бы указать, " +
+                        "является ли наследование защищенным, общедоступным или частным",
                 "Всё вышеперечисленное",
                 4));
     }};
@@ -87,6 +90,15 @@ public class TestController {
         add(new Test("С++", cQuestions));
         add(new Test("Java", javaQuestions));
     }};
+
+    //todo прайват поле с пустым списком тестов
+    //todo метод, добавляющий тест (с уникальным id)
+
+
+    public void createInitial() {
+
+        // паблик метод,создающий изначальный набор тестов
+    }
 
     public List<Test> getTests() {
         return tests;
